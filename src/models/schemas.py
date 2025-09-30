@@ -17,7 +17,7 @@ class PssengerData(BaseModel):
     
     @property
     def is_alone(self) -> int:
-        return 0 if self.family_size > 1 else 0
+        return 0 if self.family_size > 1 else 1
 
 
 

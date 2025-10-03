@@ -8,10 +8,12 @@ def predict_surival(passengers: List[PssengerData]) -> PredictionResponse:
     """_summary_
 
     Args:
-        passengers (List[PssengerData]): _description_
+        passengers (List[PssengerData]):  List of passenger input data 
+            validated by Pydantic schemas
 
     Returns:
-        PredictionResponse: _description_
+        PredictionResponse: Model predictions wrapped in a Pydantic response 
+            schema, including passenger IDs and survival status
     """
 
     # base data list of dicts
